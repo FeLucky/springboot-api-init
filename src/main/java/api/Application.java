@@ -9,8 +9,11 @@ import org.springframework.util.StopWatch;
 
 
 /**
- * Created by cj on 2018/9/12.
+ * @author wangtiexiang
+ * @Description springboot 启动主类
+ * @Datetime 2020/3/23 3:38 下午
  */
+
 @SpringBootApplication
 @EnableTransactionManagement
 public class Application {
@@ -25,9 +28,4 @@ public class Application {
 
         System.out.println(String.format("启动花费：%s s",watch.getTotalTimeSeconds()));
     }
-
-//    @Bean
-//    public BCryptPasswordEncoder bCryptPasswordEncoder(){
-//        return new BCryptPasswordEncoder();
-//    }
 }
